@@ -1,0 +1,46 @@
+.sidebar {
+  width: 250px; /* 固定宽度 */
+  border-right: 1px solid #ccc; /* 右边框 */
+  background-color: #f4f4f4; /* 确保背景颜色 */
+  display: flex;
+  flex-direction: column; /* 垂直排列 */
+  height: 100vh; /* 确保填满视口高度 */
+}
+
+.tag-filter, .categories {
+  padding: 20px; /* 移到这里 */
+  width: 100%; /* 确保宽度与 Sidebar 一致 */
+}
+
+.tag-filter {
+  margin-bottom: 20px;
+}
+
+.tag-filter select {
+  padding: 5px;
+  font-size: 14px;
+}
+
+.categories h3 {
+  font-size: 18px;
+}
+
+.categories ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* 确保没有额外的外边距 */
+}
+
+.categories li {
+  cursor: pointer;
+  padding: 10px 15px; /* 上下10px，左右15px */
+  border-radius: 5px;
+  width: calc(100% - 30px); /* 减去左右的 padding，保持一致 */
+  box-sizing: border-box; /* 包括内边距在内的总宽度 */
+}
+
+
+.categories li.active {
+  background-color: #007bff;
+  color: #fff;
+}
